@@ -4,13 +4,13 @@ let FanOff = document.getElementById('btnDenOff');
 let FanHinh = document.getElementById('Den');
 
 // Nút nhấn quạt ON
-FanOn.addEventListener('click', ()=>{
+FanOn.addEventListener('click', () => {
     FanHinh.src = 'image/den-on.png';
     firebase.database().ref('PhongNgu').child('Den').set(1);
 });
 
 // Nút nhấn quạt OFF
-FanOff.addEventListener('click', ()=>{
+FanOff.addEventListener('click', () => {
     FanHinh.src = 'image/den-off.jpg';
     firebase.database().ref('PhongNgu').child('Den').set(0);
 });
@@ -23,12 +23,12 @@ let isOn = false;
 toggleButton1.addEventListener('click', () => {
     isOn = !isOn;
     toggleButton1.textContent = isOn ? 'ON' : 'OFF';
-    
+
     // Thay đổi lớp CSS để thay đổi màu sắc của nút
     toggleButton1.classList.toggle('button-on', isOn);
     toggleButton1.classList.toggle('button-off', !isOn);
 
-    if(isOn)
+    if (isOn)
         document.getElementById('tivi1').src = 'image/tv-on.jpg';
     else
         document.getElementById('tivi1').src = 'image/tv-off.png';

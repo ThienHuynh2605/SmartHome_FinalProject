@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <title>Phòng ngủ</title>
     <link rel="stylesheet" href="PhongNgu.css">
 </head>
-<body>  
 
-        <div class="title">
-                <div class="logo"><img src="image/logo.png" alt=""></div>
-                <h2 style="font-size: 53px;text-align: center; display: block;width: 87%;">Smart Home</h2>
-        </div>
+<body>
 
-        <!--<h2 class="title">Smart Home</h2>-->
+    <div class="title">
+        <div class="logo"><img src="image/logo.png" alt=""></div>
+        <h2 style="font-size: 53px;text-align: center; display: block;width: 87%;">Smart Home</h2>
+    </div>
+
+    <!--<h2 class="title">Smart Home</h2>-->
 
     <div class="group">
         <li><a href="phòng khách.html">Phòng khách</a></li>
@@ -27,139 +32,151 @@
         <li id="time"> </li>
     </div>
 
-            <div class="box">
-                <div class="nhietDo">Nhiệt độ: <h5 id=  "nhietdo"></h5> &#8451;</div>
-                <div class="doAm">Độ ẩm: <h5 id=  "doam"></h5> %</div>
-                <div class="luonggas">Khí gas:  <h5 id = "luonggas", style="color: blue;"></h5></div>
+    <div class="box">
+        <div class="nhietDo">Nhiệt độ: <h5 id="nhietdo"></h5> &#8451;</div>
+        <div class="doAm">Độ ẩm: <h5 id="doam"></h5> %</div>
+        <div class="luonggas">Khí gas: <h5 id="luonggas" , style="color: blue;"></h5>
+        </div>
+    </div>
+
+    <div class="device_all">
+        <!--QUẠT-->
+        <div class="device">
+            <img id="Den" src="image/den-off.jpg" alt="">
+            <div class="device_name">Đèn</div>
+            <div style="text-align: center;">
+                <button type="button" class="button" id="btnDenOn">ON</button>
+                <button type="button" class="button" id="btnDenOff">OFF</button>
             </div>
-    
-            <div class="device_all">
-                <!--QUẠT-->
-                <div class="device">
-                    <img id="Den" src="image/den-off.jpg" alt="">
-                    <div class="device_name">Đèn</div>
-                    <div style="text-align: center;">
-                        <button type="button" class="button" id="btnDenOn">ON</button>
-                        <button type="button" class="button" id="btnDenOff">OFF</button>
-                    </div>
-                </div>
-                <!--TI VI-->
-                <div class="device">
-                    <img id="tivi1" src="image/tv-off.png" alt="">
-                    <div class="device_name">Ti Vi</div>
-                    <div style="text-align: center;">
-                        <button type="button" class="button_tivi" id="toggleButton1" >OFF</button>
-                    </div>
-                    
-                </div>
-                <!--Loa-->
-                <div class="device">
-                    <img src="image/Music-icon.png.crdownload" alt="" class="hinh">
-                    <div class="device_name">Loa</div>
-                    <div style="text-align: center;height: 30px;">
-                        <input type="range" min="0" max="100" step="2"  style="width: 70%;" id="volumeRange"> 
-                    </div>
-                    <div style="text-align: center; font-size: 25px; margin-top: 3px;">
-                        <span id="volumeValue"></span>
-                    </div>
-                </div>
-                
-           </div>
+        </div>
+        <!--TI VI-->
+        <div class="device">
+            <img id="tivi1" src="image/tv-off.png" alt="">
+            <div class="device_name">Ti Vi</div>
+            <div style="text-align: center;">
+                <button type="button" class="button_tivi" id="toggleButton1">OFF</button>
+            </div>
+
+        </div>
+        <!--Loa-->
+        <div class="device">
+            <img src="image/Music-icon.png.crdownload" alt="" class="hinh">
+            <div class="device_name">Loa</div>
+            <div style="text-align: center;height: 30px;">
+                <input type="range" min="0" max="100" step="2" style="width: 70%;" id="volumeRange">
+            </div>
+            <div style="text-align: center; font-size: 25px; margin-top: 3px;">
+                <span id="volumeValue"></span>
+            </div>
         </div>
 
-        <footer>
-            <div class="aboutUs" style="margin-top: 20px; width: 350px;">
-                <p style="font-size: 35px; font-weight: bold;">Về chúng tôi:</p>
-                <p>Chào mừng bạn đến với SmartHome - TTV</p>
-                <p style="text-align: justify;">Chúng tôi là một đội ngũ đam mê về công nghệ và thiết kế nội thất, và chúng tôi rất tự hào mang đến cho bạn những giải pháp thông minh và sang trọng để biến ngôi nhà của bạn thành một không gian sống hoàn hảo - tiện nghi - thoải mái.</p>
+    </div>
+    </div>
+
+    <footer>
+        <div class="aboutUs" style="margin-top: 20px; width: 350px;">
+            <p style="font-size: 35px; font-weight: bold;">Về chúng tôi:</p>
+            <p>Chào mừng bạn đến với SmartHome - TTV</p>
+            <p style="text-align: justify;">Chúng tôi là một đội ngũ đam mê về công nghệ và thiết kế nội thất, và chúng
+                tôi rất tự hào mang đến cho bạn những giải pháp thông minh và sang trọng để biến ngôi nhà của bạn thành
+                một không gian sống hoàn hảo - tiện nghi - thoải mái.</p>
+        </div>
+        <div class="memberAll">
+            <p style="font-size: 35px; font-weight: bold;">Liên hệ:</p>
+            <div class="member">
+                Huỳnh Văn Thiện: 0565180272 - 20161375@student.hcmute.edu.vn
+                <div style=" text-align: center;width: 500px;">
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/thien.huynhvan2605?mibextid=9R9pXO">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/thien.huynhvan2605?mibextid=9R9pXO">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/thien.huynhvan2605?mibextid=9R9pXO">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+
+                </div>
             </div>
-            <div class="memberAll">
-                <p style="font-size: 35px; font-weight: bold;">Liên hệ:</p>
-                <div class="member">
-                    Huỳnh Văn Thiện: 0565180272 - 20161375@student.hcmute.edu.vn
-                    <div style=" text-align: center;width: 500px;">
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/thien.huynhvan2605?mibextid=9R9pXO">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
+            <div class="member">
+                Nguyễn Thành Trung: 0979072941 - 20161387@student.hcmute.edu.vn
+                <div style=" text-align: center;width: 500px;">
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=100067359046998&mibextid=9R9pXO">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
 
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/thien.huynhvan2605?mibextid=9R9pXO">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=100067359046998&mibextid=9R9pXO">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
 
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/thien.huynhvan2605?mibextid=9R9pXO">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        
-                        
-                    </div>
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=100067359046998&mibextid=9R9pXO">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
                 </div>
-                <div class="member">
-                    Nguyễn Thành Trung: 0979072941 - 20161387@student.hcmute.edu.vn 
-                    <div style=" text-align: center;width: 500px;">
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/profile.php?id=100067359046998&mibextid=9R9pXO">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/profile.php?id=100067359046998&mibextid=9R9pXO">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/profile.php?id=100067359046998&mibextid=9R9pXO">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        
-                    </div>
-                </div>
-
-                <div class="member">
-                    Đặng Đình Long Vũ: 0918944200 - 20161398@student.hcmute.edu.vn
-                    <div style=" text-align: center;width: 500px;">
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/profile.php?id=100010704636560&mibextid=ZbWKwL">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/profile.php?id=100010704636560&mibextid=ZbWKwL">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-
-                        <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/profile.php?id=100010704636560&mibextid=ZbWKwL">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        
-                    </div>
-                </div>
-                
             </div>
 
-            <div class="copyright">
-                &copy; 2023 Smart Home Project - Bản quyền thuộc về chúng tôi - TTV.
-            </div>
-        </footer>
+            <div class="member">
+                Đặng Đình Long Vũ: 0918944200 - 20161398@student.hcmute.edu.vn
+                <div style=" text-align: center;width: 500px;">
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=100010704636560&mibextid=ZbWKwL">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
 
-       <script src="function_PhongNgu.js"></script>
-       
-           
-   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
-   <!-- TODO: Add SDKs for Firebase products that you want to use
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=100010704636560&mibextid=ZbWKwL">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a style="text-decoration: none;" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=100010704636560&mibextid=ZbWKwL">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            &copy; 2023 Smart Home Project - Bản quyền thuộc về chúng tôi - TTV.
+        </div>
+    </footer>
+
+    <script src="function_PhongNgu.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
-   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
-   <!-- lien ket voi functions.js -->
-   
-   
-   <script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <!-- lien ket voi functions.js -->
+
+
+    <script>
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = { 
-        apiKey : "AIzaSyBm9ILYEqWbboscIWpNE_gV4KDUv--pCmk" , 
-        authDomain : "tt-coso-ungdung-iots.firebaseapp.com" , 
-        projectId : "tt-coso-ungdung-iots" , 
-        storageBucket : "tt-coso-ungdung-iots.appspot.com" , 
-        messagingSenderId : "157255098472" , 
-        appId : "1:157255098472:web:093880445c72b044875bdd" , 
-        measurementId : "G-2Y46TGHXGT" 
+        const firebaseConfig = {
+            apiKey: "AIzaSyBm9ILYEqWbboscIWpNE_gV4KDUv--pCmk",
+            authDomain: "tt-coso-ungdung-iots.firebaseapp.com",
+            projectId: "tt-coso-ungdung-iots",
+            storageBucket: "tt-coso-ungdung-iots.appspot.com",
+            messagingSenderId: "157255098472",
+            appId: "1:157255098472:web:093880445c72b044875bdd",
+            measurementId: "G-2Y46TGHXGT"
         };
-        
+
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
@@ -169,7 +186,7 @@
         var nhietDo = document.getElementById('nhietdo');
         var dbRef = firebase.database().ref('NhietDo');
         dbRef.on('value', snap => nhietDo.innerText = snap.val());
-        
+
         // Độ ẩm
         var doAm = document.getElementById('doam');
         var dbRef2 = firebase.database().ref('DoAm');
@@ -178,46 +195,46 @@
         // Lượng gas
         var Luonggas = document.getElementById('luonggas');
         var dbRef3 = firebase.database().ref('KhiGas');
-        dbRef3.on('value', snap => Luonggas.innerText = snap.val()? "Warning": "Normal");
+        dbRef3.on('value', snap => Luonggas.innerText = snap.val() ? "Warning" : "Normal");
 
-   </script>
+    </script>
 
     <script>
-    // Đèn
+        // Đèn
         const Den_Hinh = document.getElementById('Den');
         const Den_Ref = database.ref('PhongNgu').child('Den');
 
-        Den_Ref.on('value', (snapshot)=>{
+        Den_Ref.on('value', (snapshot) => {
             const Den_TT = snapshot.val();
             Den_Hinh.src = Den_TT ? 'image/den-on.png' : 'image/den-off.jpg';
         });
 
-   </script>
+    </script>
 
-   <script>
-    // Máy lạnh
+    <script>
+        // Máy lạnh
         const TV_Hinh = document.getElementById('tivi1');
         const TV_nutNhan = document.getElementById('toggleButton1');
         const TV_Ref = database.ref('PhongNgu').child('TiVi');
 
-        TV_Ref.on('value', (snapshot)=>{
+        TV_Ref.on('value', (snapshot) => {
             const TV_TT = snapshot.val();
             TV_Hinh.src = TV_TT ? 'image/tv-on.jpg' : 'image/tv-off.png';
             TV_nutNhan.textContent = TV_TT ? 'ON' : 'OFF';
-            if(TV_TT)
+            if (TV_TT)
                 TV_nutNhan.style.backgroundColor = '#4CAF50';
             else
                 TV_nutNhan.style.backgroundColor = 'red';
         });
 
-        TV_nutNhan.addEventListener('click', ()=>{
+        TV_nutNhan.addEventListener('click', () => {
             const TV_TT_Moi = TV_nutNhan.textContent === 'ON' /*? 1 : 0*/;
             TV_Ref.set(TV_TT_Moi);
         });
-   </script>
+    </script>
 
-   <script>
-    // Loa
+    <script>
+        // Loa
         const volumeRange = document.getElementById('volumeRange');
         const volumeValue = document.getElementById('volumeValue');
         const volumeIcon = document.querySelector('.hinh');
@@ -234,7 +251,7 @@
         });
 
         //volume_Ref.on('value', snap => volumeValue.innerText = snap.val());
-        volume_Ref.on('value', (snapshot)=>{
+        volume_Ref.on('value', (snapshot) => {
             volume = snapshot.val();
             volumeValue.textContent = volume;
             volumeRange.value = volume;
@@ -242,29 +259,31 @@
             scale = volume / 100;
             volumeIcon.style.transform = `scale(${scale})`;
         });
-   </script>
+    </script>
 
-<script>
-    // Đồng hồ
-    function dongho() {
-    var time = new Date();
-    var gio = time.getHours();
-    var phut = time.getMinutes();
-    var giay = time.getSeconds();
-    if (gio < 10) 
-    gio = "0" + gio;
-    if (phut < 10) 
-    phut = "0" + phut;
-    if (giay < 10) 
-    giay = "0" + giay;
-    document.getElementById("time").innerHTML = gio + ":" + phut + ":" + giay;
-    setTimeout("dongho()", 1000);
-    };
-    dongho();
+    <script>
+        // Đồng hồ
+        function dongho() {
+            var time = new Date();
+            var gio = time.getHours();
+            var phut = time.getMinutes();
+            var giay = time.getSeconds();
+            if (gio < 10)
+                gio = "0" + gio;
+            if (phut < 10)
+                phut = "0" + phut;
+            if (giay < 10)
+                giay = "0" + giay;
+            document.getElementById("time").innerHTML = gio + ":" + phut + ":" + giay;
+            setTimeout("dongho()", 1000);
+        };
+        dongho();
     </script>
 
 
-   </body>
-   </html>
 </body>
+
+</html>
+</body>
+
 </html>
