@@ -35,7 +35,7 @@
     <div class="box">
         <div class="nhietDo">Nhiệt độ: <h5 id="nhietdo"></h5> &#8451;</div>
         <div class="doAm">Độ ẩm: <h5 id="doam"></h5> %</div>
-        <div class="luonggas">Lượng khí gas: <h5 id="luonggas"></h5> &#8240;</div>
+        <div class="luonggas">Khí gas:  <h5 id = "luonggas", style="color: blue;"></h5></div>
     </div>
 
     <div class="device_all">
@@ -184,18 +184,18 @@
 
         // Nhiệt độ
         var nhietDo = document.getElementById('nhietdo');
-        var dbRef = firebase.database().ref('NhaBep').child('NhietDo');
+        var dbRef = firebase.database().ref('NhietDo');
         dbRef.on('value', snap => nhietDo.innerText = snap.val());
 
         // Độ ẩm
         var doAm = document.getElementById('doam');
-        var dbRef2 = firebase.database().ref('NhaBep').child('DoAm');
+        var dbRef2 = firebase.database().ref('DoAm');
         dbRef2.on('value', snap => doAm.innerText = snap.val());
 
         // Lượng gas
         var Luonggas = document.getElementById('luonggas');
-        var dbRef3 = firebase.database().ref('NhaBep').child('KhiGas');
-        dbRef3.on('value', snap => Luonggas.innerText = snap.val());
+        var dbRef3 = firebase.database().ref('KhiGas');
+        dbRef3.on('value', snap => Luonggas.innerText = snap.val()? "Warning": "Normal");
 
     </script>
 
@@ -228,7 +228,7 @@
         });
 
         cuab_nutNhan.addEventListener('click', () => {
-            const cb_TT_Moi = cuab_nutNhan.textContent === 'ON' ? 1 : 0;
+            const cb_TT_Moi = cuab_nutNhan.textContent === 'ON' /*? 1 : 0*/;
             cuab_Ref.set(cb_TT_Moi);
         });
     </script>
