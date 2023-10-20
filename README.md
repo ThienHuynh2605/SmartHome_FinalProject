@@ -21,10 +21,14 @@ Phần cứng gồm:
 - Các led đơn là các thiết bị (6 thiết bị - mỗi phòng 2 thiết bị).
 - Màn hình LCD1602 dùng để hiển thị giá trị của loa Phòng khách, loa Phòng ngủ và máy thông gió.
 - Cảm biến nhiệt độ, độ ẩm DHT11; cảm biến khí Gas MQ2.
-![Kết nối của phần cứng](https://github.com/ThienHuynh2605/SmartHome_FinalProject/assets/129538825/f7821cdd-5bd4-44ab-9c58-6353eb195423)
 
 Sơ đồ kết nối
 ![Sơ đồ kết nối](https://github.com/ThienHuynh2605/SmartHome_FinalProject/assets/129538825/e33d1489-f7ea-4663-81a1-e044aa1403d4)
+
+Kết nối trên phần cứng
+<img src="https://github.com/ThienHuynh2605/SmartHome_FinalProject/assets/129538825/f7821cdd-5bd4-44ab-9c58-6353eb195423" alt="Kết nối của phần cứng" width="1000" height="750">
+
+[Video Ket Qua He Thong](https://www.youtube.com/watch?v=ODe7xbFddnY)
 
 ## Vấn đề của hệ thống
 Hệ thống hoạt động trong một thời gian ngắn thì sẽ bị đứng (có thể do việc truyền nhận dữ liệu từ Firebase) nên cần Reset ESP32 để hoạt động lại.
